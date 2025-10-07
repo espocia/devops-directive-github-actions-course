@@ -1,4 +1,4 @@
-name: "Step Types - Espocia"
+name: "03-02 Step Types - Espocia"
 
 on:
   workflow_dispatch:

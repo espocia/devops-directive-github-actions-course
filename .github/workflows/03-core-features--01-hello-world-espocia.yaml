@@ -1,4 +1,4 @@
-name: "Hello World - Espocia"
+name: "03-02 Hello World - Espocia"
 
 on:
   workflow_dispatch:
