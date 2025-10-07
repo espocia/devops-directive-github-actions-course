@@ -29,6 +29,6 @@ jobs:
       - name : Inspect values inside consumer (note FOO is unset)
         run: |
           echo "Value from producer:    ${{ needs.producer.output.foo }}"
-          echo "FOO in consumer:        ${{FOO:-<UNSET>}}"
+          echo "FOO in consumer:        ${FOO:-<UNSET>}"
 
   
