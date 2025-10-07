@@ -20,7 +20,7 @@ jobs:
       - name: Inspect value inside producer 
         run: |
           echo "FOO (set via GITHUB_ENV) : $FOO"
-          echo "foo (setp output) : ${{ steps.generate-foo.outputs.foo }}"
+          echo "foo (setup output) : ${{ steps.generated-foo.outputs.foo }}"
 
   consumer:
     runs-on: ubuntu-24.04
@@ -28,7 +28,7 @@ jobs:
     steps:
       - name : Inspect values inside consumer (note FOO is unset)
         run: |
-          echo "Value from producer:    ${{ needs.producer.output.foo }}"
+          echo "Value from producer:    ${{ needs.producer.outputs.foo }}"
           echo "FOO in consumer:        ${FOO:-<UNSET>}"
 
   
