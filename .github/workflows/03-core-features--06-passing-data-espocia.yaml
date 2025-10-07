@@ -24,7 +24,7 @@ jobs:
 
   consumer:
     runs-on: ubuntu-24.04
-    needs: producers
+    needs: producer
     steps:
       - name : Inspect values inside consumer (note FOO is unset)
         run: |
